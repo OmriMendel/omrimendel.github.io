@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>
+      const routes = {
+            "/sudoku": "https://github.com/OmriMendel/Sudoku",
+            "/download/sudoku": "https://play.google.com/store/apps/details?id=com.omrim.sudoku"
+        };
+        const path = window.location.pathname.toLowerCase().replace(/\/$/, "");
+
+        if (routes[path]) {
+            window.location.replace(routes[path]);
+        } else {
+            window.location.replace("https://omrimendel.github.io/");
+        }
+    </script>
+</head>
+<body>
+    <p>Redirecting you... if nothing happens, <a href="/">click here</a>.</p>
+</body>
+</html>
