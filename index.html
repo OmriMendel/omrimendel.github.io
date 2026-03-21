@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omri Mendel</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="index.js" defer></script>
+</head>
+<body>
+
+    <header id="header">
+        <a class="logo">Omri Mendel</a>
+        
+        <div class="nav-controls">
+            <button id="themeToggle" class="theme-btn" aria-label="Toggle Theme">☀️</button>
+            
+            <button class="hamburger" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+
+        <ul class="nav-menu">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#Projects" class="nav-link">Projects</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section id="about" class="hero fade-in container">
+            <h1>Hi, I'm <span>Omri Mendel</span>.</h1>
+            <p>I'm a software and game developer focused on C# and Python development. I love building tools that prioritize both security and performance, bridging the gap between low-level system logic and smooth, user-friendly interfaces.</p>
+        </section>
+
+        <section id="Projects" class="container fade-in">
+            <h2 class="section-title">My Projects</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Sudoku</h3>
+                    <p>An interactive Sudoku project featuring daily puzzles, different difficulties, statistics, items, points, and more.</p>
+                    <div class="tech-stack">C# • .NET MAUI</div>
+                    <a href="Sudoku" class="card-link">View Repository &rarr;</a>
+                    <a href="download/Sudoku" class="card-link">Download &rarr;</a>
+                </div>
+                
+                <div class="card">
+                    <h3>Audio Encryption Tool</h3>
+                    <p>A secure privacy tool that uses RSA and AES encryption to secretly hide any file inside playable audio tracks using public and private keys.</p>
+                    <div class="tech-stack">C# • WINDOWS FORMS</div>
+                    <a href="AudioEncryption" class="card-link">View Repository &rarr;</a>
+                    <a href="download/AudioEncryption" class="card-link">Download &rarr;</a>
+                </div>
+
+                <div class="card">
+                    <h3>Encrypted Compressed File (ECF)</h3>
+                    <p>A security tool that engineers a custom .ecf file format by layering AES-256 (CBC) encryption over ZipArchive compression.</p>
+                    <div class="tech-stack">C# • WINDOWS FORMS</div>
+                    <a href="ECF" class="card-link">View Repository &rarr;</a>
+                    <a href="download/ECF" class="card-link">Download &rarr;</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container fade-in">
+        <div class="footer-content">
+            <p>&copy; 2026 Omri Mendel. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/omrimendel">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" aria-label="Go to top">&uarr;</button>
+
+</body>
+</html>
