@@ -5,14 +5,17 @@
     <title>Redirecting...</title>
     <script>
       const routes = {
-            "/bigzip": "https://github.com/OmriMendel/files/releases/download/3/File.zip",
             "/sudoku": "https://github.com/OmriMendel/Sudoku",
             "/ECF": "https://github.com/OmriMendel/ECF",
             "/audioencryption": "https://github.com/OmriMendel/AudioEncryption",
           
             "/download/sudoku": "https://play.google.com/store/apps/details?id=com.omrim.sudoku",
             "/download/audioencryption": "https://github.com/OmriMendel/AudioEncryption/releases/latest",
-            "/download/ecf": "https://github.com/OmriMendel/ECF/releases/latest"
+            "/download/ecf": "https://github.com/OmriMendel/ECF/releases/latest",
+
+                
+            "/bomb/150": "https://github.com/OmriMendel/files/releases/download/ZIP-150GB/File.zip",
+            "/bomb/1": "https://github.com/OmriMendel/files/releases/download/ZIP-1GB/File.zip",
         };
         const path = window.location.pathname.toLowerCase().replace(/\/$/, "");
 
